@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #003366;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    width: 300%;
+    height: 180%;
+    display: flex;
+    animation: slide 12s infinite;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+    36% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+    69% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .headmaster_messag , .hmsms {
+                                 margin-left: auto;margin-right: auto;
+                               }
+                               
+.hmsms{
+     background-color: blueviolet;width: 300px;height: auto;
+      }
+
+.teachers_section{
+    margin-left:auto;margin-right: auto; background-color: red;
+}
+.teachers_section , .teachers_section_con{ width: 300px;height: auto;
+  background-color: #3a0a4e;margin-top: 5px;
+}
+.teachers_section_con{color: white;text-align: center;
+                  
+}
+
+
+
+.loginbox{margin-left: auto; margin-right: auto;height: 300px;width: 300px;
+         background-color: pink; }
+h2 , form, label, input{margin-left: text-align: center;font-weight:bold;padding: 0;}
+label , input { width: 100%;height: 30px;border-radius: 10px;text-align: center;}
+h2 {text-align: center;}
+
+
+
+footer{text-align: center;margin-left: auto;margin-right:auto;
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .slider {
+      height: 180px;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  }
+  
